@@ -1,0 +1,146 @@
+@media (max-width: 576px) {
+  // header
+  .desconto {
+    p {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18.15px;
+      text-align: center;
+      max-width: 290px;
+    }
+  }
+  .texto-header {
+    div {
+      h1 {
+        font-size: 33px;
+        line-height: 32px;
+        max-width: 290px;
+        padding-bottom: 17px;
+      }
+      p {
+        max-width: 287px;
+      }
+      .descer {
+        display: none;
+      }
+    }
+  }
+  // main
+  .texto-categorias {
+    h2 {
+      max-width: 290px;
+    }
+    p {
+      max-width: 290px;
+    }
+  }
+  .cursos-categorias {
+    .cursos {
+      .cursos-itens {
+        max-height: 138px;
+        max-width: 142px;
+        a {
+          h3,p {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  // aside
+  .conheca-container {
+    &>img {
+      display: none;
+    }
+    .texto-conheca {
+      max-width: 289px;
+      h1 {
+        text-align: center;
+      }
+      .vantagens {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3 {
+          text-align: center;
+        }
+      }
+      p {
+        max-width: 291px;
+        text-align: center;
+      }
+    }
+  }
+  .diferenciais-container {
+    display: none;
+  }
+  // main 
+  .principais-cursos {
+    .cognitivo, .violencia, .infantil {
+      width: fit-content;
+      background-size: contain;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .cursos-texto {
+      padding-top: 50px;
+      height: 150px;
+      h4 {
+        font-size: 20px;
+        padding-bottom: 0;
+      }
+      .beneficios {
+        flex-direction: column;
+      }
+    }
+  }
+  // footer
+  .infos {
+    flex-direction: column;
+    padding-top: 0;
+    gap: 0;
+  }
+  .infos-links {
+    .dropdown button {
+      color: white;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16.94px;
+    }
+    .button {
+      display: none;
+    }
+    img {
+      display: inline;
+    }
+    ul {
+      width: 260px;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        ul {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .certificacoes-itens {
+    display: none;
+  }
+  .politicas-container {
+    flex-direction: column;
+    .politicas {
+      flex-direction: column;
+      padding-left: 0;
+      gap: 20px;
+    }
+  }
+}

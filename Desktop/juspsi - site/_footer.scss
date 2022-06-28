@@ -1,0 +1,176 @@
+$roxo: #643A9B;
+$cinza: #E2E2E2 ;
+$branco: #F1F1F1;
+$cinza-escuro: #8B8B8B;
+$laranja: #F07F3C;
+$azul-escuro: #31306C;
+.container-sobre {
+  background-color: $azul-escuro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+  padding-bottom: 50px;
+  .infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 40px;
+    padding-top: 138px;
+  }
+  .infos-links {
+    max-width: 270px;
+    height: fit-content;
+    background-color: $azul-escuro;
+    a {
+      text-decoration: none;
+    }
+  }
+  ul {
+    padding-left: 0;
+    background-color: $azul-escuro;
+    h4 {
+      color: white;
+    }
+  }
+  ul li {
+    list-style: none;
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25px;
+      text-align: left;
+    }
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24.2px;
+    text-align: left;
+    padding-bottom: 12px;
+  }
+  h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24.2px;
+    text-align: left;
+  }
+}
+.container-seta {
+  background-color: #F07F3C;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.certificacoes-container {
+  background-color: $branco;
+  margin-top: 75px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    color: #565656;
+  }
+  .certificacoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .certificacoes-itens {
+    max-width: 160px;
+    border-radius: 3px;
+    gap: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 93px;
+    width: 160px;
+    &>div {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.politicas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 30px;
+  .direitos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      color: $cinza-escuro;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 15.23px;
+    }
+  }
+  .politicas {
+    display: flex;
+    align-items: center;
+    padding-left: 106px;
+    gap: 50px;
+    a {
+      text-decoration: none;
+      color: $azul-escuro;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 18.75px;
+      text-align: right;
+    }
+  }
+}
+
+
+.contatos {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to right, $azul-escuro, $roxo, $laranja);
+  height: 53px;
+  ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    gap: 60px;
+    justify-self: center;
+    margin: auto;
+    i {
+      color: white;
+    }
+  }
+  .whatsapp {
+    margin-top: -50px;
+  }
+}
+.subir a {
+  opacity: 0.5;
+  color: $branco;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  transform: rotate(270deg);
+  img {
+    width: 2px;
+    transform: rotate(270deg);
+    margin-left: 60px;
+  }
+}

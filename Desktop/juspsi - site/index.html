@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/71123056be.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>Site - Juspsi</title>
+</head>
+<body>
+  <header>
+    <div class="container-fluid">
+      <div class="desconto">
+        <p>Só Hoje! Desconto de 50% nos <a href="">cursos preparatórios</a> - <b>Termina em 00:58:16h</b></p>
+      </div>
+      <div class="container-nav">
+        <nav>
+          <div><img src="images/logo.png" alt="logo juspsi" class="img-fluid"></div>
+          <ul>
+            <li class="button"><img src="images/lupa.png" alt="lupa" class="img-fluid"></li>
+            <li class="button"><a href=""><img src="images/user.png" alt="">Login |</a> <a href="">Criar conta</a></li>
+            <li class="menu" onclick="abrir()"><a href="">
+              <div>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <p>MENU</p>
+            </a></li>
+          </ul>
+        </nav>
+        <div class="texto-header">
+          <div>
+            <h1>Terapia cognitivo comportamental</h1>
+            <p>Passo a passo para se tornar um excelente psicoterapeuta.</p>
+            <div class="button"><a href="">CLIQUE E CONHEÇA</a></div>
+            <div class="descer"><a href="#categorias">DESCER PÁGINA
+              <img src="images/risco-link.png" alt="">
+            </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-fluid">
+      <div class="categorias" id="categorias">
+        <div class="texto-categorias">
+          <h2>PRINCIPAIS CATEGORIAS</h2>
+          <p>Acesse conteúdos da sua área, e experimente novos campos de atuação, expandindo as suas estratégias, técnicas e possibilidades de ingresso no mercado de trabalho</p>
+        </div>
+        <div class="cursos-categorias">
+          <div class="cursos">
+            <div class="cursos-itens">
+              <a href="">
+                <h3>Cursos de Direito</h3>
+                <img src="images/mais.png" alt="simbolo mais">
+              </a>
+            </div>
+            <div class="cursos-itens">
+              <a href="">
+                <h3>Cursos de Psicologia</h3>
+                <span></span>
+                <p>Aprenda a prática da Psicologia, com profissionais consolidados e qualificados no mercado</p>
+                <img src="images/mais.png" alt="simbolo mais">
+              </a>
+            </div>
+            <div class="cursos-itens">
+              <a href="">
+                <h3>Serviço Social</h3>
+                <img src="images/mais.png" alt="simbolo mais">
+              </a>
+            </div>
+            <div class="cursos-itens">
+              <a href="">
+                <h3>Cursos Preparatórios</h3>
+                <img src="images/mais.png" alt="simbolo mais">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="texto-categorias">
+          <h2>PRINCIPAIS CURSOS</h2>
+          <p>Cursos estruturados para alavancar sua carreira</p>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="principais-cursos">
+                <a href="" class="cognitivo">
+                  <div class="cursos-texto">
+                    <span>CURSO ONLINE</span>
+                    <h4>Terapia cognitivo comportamental</h4>
+                    <div class="classificacao">
+                      <img src="images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                      <img src="images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                      <img src="images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                      <img src="images/estrela-cheia.png" alt="estrela cheia" class="img-fluid">
+                      <img src="images/estrela-metade.png" alt="meia estrela" class="img-fluid">
+                      <p>4,5</p>
+                    </div>
+                    <div class="beneficios">
+                      <div>
+                        <img src="images/certificado-cursos.png" alt="certificado" class="img-fluid">
+                        <p>Certificado 4h</p>
+                      </div>
+                      <div>
+                        <img src="images/camera-zoom.png" alt="camera" class="img-fluid">
+                        <p>Zoom</p>
+                      </div>
+                      <div>
+                        <img src="images/valor.png" alt="cifrao" class="img-fluid">
+                        <p>R$ <b>99,90</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="principais-cursos">
+                <a href="" class="violencia">
+                  <div class="cursos-texto">
+                    <span>CURSO ONLINE</span>
+                    <h4>Violência Doméstica - Protocolo de atendimento e acompanhamento</h4>
+                    <div class="classificacao">
+                      <img src="images/estrela-cheia.png" alt="estrela" class="img-fluid">
+                      <img src="images/estrela-cheia.png" alt="estrela" class="img-fluid">
+                      <img src="images/estrela-cheia.png" alt="estrela" class="img-fluid">
+                      <img src="images/estrela-cheia.png" alt="estrela" class="img-fluid">
+                      <img src="images/estrela-cheia.png" alt="meia estrela" class="img-fluid">
+                      <p>5,0</p>
+                    </div>
+                    <div class="beneficios">
+                      <div>
+                        <img src="images/certificado-cursos.png" alt="certificado" class="img-fluid">
+                        <p>Certificado 4h</p>
+                      </div>
+                      <div>
+                        <img src="images/camera-zoom.png" alt="camera" class="img-fluid">
+                        <p>Zoom</p>
+                      </div>
+                      <div>
+                        <img src="images/valor.png" alt="cifrao" class="img-fluid">
+                        <p>R$ <b>350,99</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="principais-cursos">
+                <a href="" class=" infantil">
+                  <div class="cursos-texto">
+                    <span>CURSO PRESENCIAL</span>
+                    <h4>Violência Sexual Infanto-Juvenil</h4>
+                    <div class="classificacao">
+                      <img src="images/estrela-cheia.png" alt="estrela" class="img-fluid">
+                      <img src="images/estrela-cheia.png" alt="estrela" class="img-fluid">
+                      <img src="images/estrela-metade.png" alt="meia estrela" class="img-fluid">
+                      <p>3,5</p>
+                    </div>
+                    <div class="beneficios">
+                      <div>
+                        <img src="images/certificado-cursos.png" alt="certificado" class="img-fluid">
+                        <p>Certificado 20h</p>
+                      </div>
+                      <div>
+                        <img src="images/local.png" alt="pin de localização" class="img-fluid">
+                        <p>SP</p>
+                      </div>
+                      <div>
+                        <img src="images/valor.png" alt="cifrao" class="img-fluid">
+                        <p>R$ <b>59,90</b></p>
+                      </div>
+                      <div>
+                        <img src="images/calendario.png" alt="calendario" class="img-fluid">
+                        <p>27/06/2021</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+
+  <aside>
+    <div class="container-fluid">
+      <div class="conheca-container">
+        <img src="images/modelo.png" alt="modelo">
+        <div class="texto-conheca">
+          <h1>TRANSFORME SUA VIDA ATRAVÉS DOS CURSOS JUSPSI</h1>
+          <div>
+            <div class="vantagens">
+              <img src="images/relogio.png" alt="relogio">
+              <h3>APRENDA OS CURSOS NO SEU TEMPO</h3>
+            </div>
+            <div class="vantagens">
+              <img src="images/certificado.png" alt="certificado">
+              <h3>CERTIFICADOS VÁLIDOS EM TODO O BRASIL</h3>
+            </div>
+          </div>
+          <p>Aprenda tudo que não te ensinaram na faculdade, passo a passo na prática e alcance os melhores resultados profissionais</p>
+          <div class="button"><a href="">CONHEÇA A JUSPSI</a></div>
+        </div>
+      </div>
+      <div class="diferenciais-container">
+          <h1>DIFERENCIAS JUSPSI</h1>
+          <div class="diferenciais-itens">
+            <div>
+              <img src="images/caixa.png" alt="caixa">
+              <p>Metodologia didática, prática e transformadora</p>
+            </div>
+            <div>
+              <img src="images/livro.png" alt="livro">
+              <p>Trabalhamos com métodos de disciplinas multidisciplinares.</p>
+            </div>
+            <div>
+              <img src="images/quebra-cabeca.png" alt="neurociência">
+              <p>Utilizamos neurociência que garante maior absorção dos conteúdos.</p>
+            </div>
+            <div>
+              <img src="images/suporte.png" alt="suporte ao aluno">
+              <p>Damos suporte ao aluno para ingresso no mercado de trabalho.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </aside>
+  <section>
+    <div class="container-fluid">
+      <div class="container-depoimentos">
+        <div class="swiper mySwiper">
+          <div class="titulo-depoimentos">
+            <div>
+              <h3>DEPOIMENTOS</h3>
+              <p>Opinião de nossos alunos sobre os cursos JUSPSI</p>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="depoimentos-item">
+                <span></span>
+                <img src="images/depoimento.png" alt="aluno" class="img-fluid">
+                <div>
+                  <h4>laicmonteiro</h4>
+                  <p>“Curso maravilhoso! Super recomendo! dias de muita troca e compartilhamento de conhecimento. Parabéns psicóloga Lane por ser essa pessoa tão humana e uma profissional de extrema competência. A psicologia agradece por ter você como representante da nossa categoria!”</p>
+                </div>
+                <div class="link-depoimento">
+                  <a href=""><img src="images/seta-lado.png" alt="" class="img-fluid">CURSO DE COACHING</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="depoimentos-item">
+                <span></span>
+                <img src="images/depoimento2.png" alt="aluno" class="img-fluid">
+                <div>
+                  <h4>psicomgestao</h4>
+                  <p>“Só em um curso da Juspsi vc tem um clima tão intimista, supervisão individual de documentos, ufa! É demais!!! Em cada passo a preocupação de conferir se realmente aprendemos, o termômetro do curso é a nossa satisfação e a missão é nosso desenvolvimento técnico, são particularidades que somente a JUSPSI oferece!</p>
+                </div>
+                <div class="link-depoimento">
+                  <a href=""><img src="images/seta-lado.png" alt="" class="img-fluid">CURSO DE INTELIGÊNCIA EMOCIONAL</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="depoimentos-item">
+                <span></span>
+                <img src="images/depoimento3.png" alt="aluno" class="img-fluid">
+                <div>
+                  <h4>paulinhahana</h4>
+                  <p>Curso maravilhoso, me sinto preparada para produzir documentos psicológicos.
+                    Esse curso vai muito além da técnica! Obrigada por ter compartilhado tanto conhecimento!</p>
+                </div>
+                <div class="link-depoimento">
+                  <a href=""><img src="images/seta-lado.png" alt="" class="img-fluid">CURSO DE COACHING</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button"><a href="">VER TODOS OS DEPOIMENTOS</a></div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container-fluid">
+      <div class="container-sobre">
+        <div class="infos">
+          <div class="infos-links">
+            <a href="#"><img src="images/seta-baixo.png" alt="seta apontando para baixo" class="img-fluid"> INSTITUCIONAL</a>
+            <ul>
+              <li><a href="">A empresa</a></li>
+              <li><a href="">Novidades</a></li>
+              <li><a href="">Materiais gratuitos</a></li>
+              <li><a href="">Depoimentos</a></li>
+              <li><a href="">Contato</a></li>
+            </ul>
+            <div class="button"><a href=""><img src="images/user.png" alt="">Login |</a> <a href="">Criar conta</a></div>
+          </div>
+          <div class="infos-links">
+            <div>
+              <a href="#"><img src="images/seta-baixo.png" alt="seta apontando para baixo" class="img-fluid">CURSOS PREPARATÓRIOS</a>
+              <ul>
+                <li><a href="">Presenciais</a></li>
+                <li><a href="">Telepresenciais</a></li>
+                <li><a href="">Simulados online</a></li>
+              </ul>
+            </div>
+            <div>
+              <a href="#"><img src="images/seta-baixo.png" alt="seta apontando para baixo">COACHING E INTELIGÊNCIA EMOCIONAL</a>
+              <ul>
+                <li><a href="">Coaching para concursos públicos</a></li>
+                <li><a href="">Coaching de carreira</a></li>
+                <li><a href="">Inteligência emocional</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="infos-links">
+            <a href="#"><img src="images/seta-baixo.png" alt="seta apontando para baixo" class="img-fluid">PARA SUA EMPRESA</a>
+            <ul>
+              <h4>EMPRESAS PÚBLICAS</h4>
+              <li><a href="">Cursos e treinamentos</a></li>
+              <li><a href="">Assessoria técnica</a></li>
+            </ul>
+            <ul>
+              <h4>EMPRESAS PRIVADAS</h4>
+              <li><a href="">Cursos e treinamentos</a></li>
+              <li><a href="">Assessoria técnica</a></li>
+            </ul>
+          </div>
+          <div class="infos-links">
+            <a href="#"><img src="images/seta-baixo.png" alt="seta apontando para baixo" class="img-fluid">CURSOS</a>
+            <div>
+              <h4>DIREITO</h4>
+              <ul>
+                <li><a href="">Clubes de assinatura</a></li>
+                <li><a href="">Cursos presenciais</a></li>
+                <li><a href="">Cursos online</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>PSICOLOGIA</h4>
+              <ul>
+                <li><a href="">Clubes de assinatura</a></li>
+                <li><a href="">Cursos presenciais</a></li>
+                <li><a href="">Cursos online</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>SERVIÇO SOCIAL</h4>
+              <ul>
+                <li><a href="">Clubes de assinatura</a></li>
+                <li><a href="">Cursos presenciais</a></li>
+                <li><a href="">Cursos online</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="certificacoes-container">
+          <div>
+            <div class="certificacoes">
+              <h2>CERTIFICAÇÕES</h2>
+              <div class="certificacoes-itens">
+                <div>
+                  <a href=""><img src="images/certificacao.png" alt=""></a>
+                </div>
+                <div>
+                  <a href=""><img src="images/certificacao2.png" alt=""></a>
+                </div>
+                <div>
+                  <a href=""><img src="images/certificacao3.png" alt=""></a>
+                </div>
+                <div>
+                  <a href=""><img src="images/certificacao4.png" alt=""></a>
+                </div>
+                <div>
+                  <a href=""><img src="images/certificacao5.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="politicas-container">
+              <div class="direitos">
+                <img src="images/logo2.png" alt="">
+                <p>2021 © Todos os direitos reservados - JUSPSI. Seja a sua melhor versão profissional | Criação</p>
+                <img src="images/logo-oxigenweb.png" alt="">
+              </div>
+              <div class="politicas">
+                <a href="">Política de privacidade</a>
+                <a href="">Política de cookies</a>
+              </div>
+            </div>
+          </div>
+          <div class="subir">
+            <a href="#categorias">
+              VOLTAR AO TOPO
+              <img src="images/risco-link.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contatos">
+        <div class="whatsapp">
+          <img src="images/whatsapp-icon.png" alt="icone-whatsapp" class="img-fluid">
+        </div>
+        <ul>
+          <li><a href=""><i class="fa-brands fa-youtube fa-2x"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-facebook-f fa-2x"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const menu = document.getElementById("nav-bar");
+    function abrir () {
+      menu.classList.toggle('active');
+    }
+
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      centeredSlides: true,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+    });
+  </script>
+
+
+</body>
+</html>
