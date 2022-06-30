@@ -1,5 +1,9 @@
 * {
   font-family: 'Inter', sans-serif;
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
 $laranja: #F07F3C;
 $azul-escuro: #31306C;
@@ -10,6 +14,9 @@ $branco: #FFFFFF;
   align-items: center;
   background-image: linear-gradient(to right, $azul-escuro, $laranja);
   color: $branco;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
   p {
     padding-top: 10px;
   }
@@ -21,7 +28,7 @@ $branco: #FFFFFF;
   background-image: url('images/banner.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 650px;
+  height: 700px;
 }
 .button {
   background-color: $laranja;
@@ -32,54 +39,93 @@ $branco: #FFFFFF;
     text-decoration: none;
     color: $branco;
   }
+  &:hover {
+    .container-nav {
+      overflow: hidden;
+    }
+  }
 }
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto 30px;
-  ul {
+  position: absolute;
+  height: fit-content;
+  div {
+    margin: 80px 15px;
+  }
+  .menuButton{
+    background-color: $branco;
     display: flex;
-    list-style: none;
-    gap: 30px;
+    justify-content: center;
     align-items: center;
-    li a {
-      text-decoration: none;
-      color: $branco;
+    padding: 10px 20px;
+    height: 45px;
+    border-radius: 20px;
+    p {
+      color: $laranja;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
     }
-    .menu {
-      background-color: $branco;
-      padding: auto 20px;
-      width: 133px;
-      border-radius: 20px;
-      a {
-        color: $laranja;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+    p {
+      padding-top: 10px;
+    }
+    span {
+      background-color: $laranja;
+      width: 23px;
+      border: 2px solid $laranja;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+  }
+  .lista {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: linear-gradient(to right, $azul-escuro, $laranja);
+    z-index: 1000;
+    list-style: none;
+    height: fit-content;
+    div:first-of-type {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    div:nth-of-type(2) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .nav-item {
+    .nav-link {
+      color: white;
+      &:first-of-type {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 45px;
+        text-align: right;
       }
-      p {
-        padding-top: 10px;
-      }
-      span {
-        background-color: $laranja;
-        width: 23px;
-        border: 2px solid $laranja;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-bottom: 5px;
+      &:nth-of-type(2) {
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 51px;
+        text-align: right;
       }
     }
   }
 }
-
 .texto-header {
   color: $branco;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
   div {
     text-align: center;
     display: flex;

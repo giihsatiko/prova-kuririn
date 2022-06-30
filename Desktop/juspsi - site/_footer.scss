@@ -24,8 +24,17 @@ $azul-escuro: #31306C;
     max-width: 270px;
     height: fit-content;
     background-color: $azul-escuro;
-    a {
+    &>a,div {
+      color: white;
       text-decoration: none;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24.2px;
+      text-align: left;
+      padding-bottom: 12px;
+    }
+    img {
+      display: none;
     }
   }
   ul {
@@ -53,13 +62,8 @@ $azul-escuro: #31306C;
     text-align: left;
     padding-bottom: 12px;
   }
-  h4 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24.2px;
-    text-align: left;
-  }
 }
+
 .container-seta {
   background-color: #F07F3C;
   display: flex;
@@ -155,7 +159,10 @@ $azul-escuro: #31306C;
     }
   }
   .whatsapp {
-    margin-top: -50px;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 5;
   }
 }
 .subir a {

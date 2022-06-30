@@ -22,20 +22,65 @@
         <p>Só Hoje! Desconto de 50% nos <a href="">cursos preparatórios</a> - <b>Termina em 00:58:16h</b></p>
       </div>
       <div class="container-nav">
-        <nav>
-          <div><img src="images/logo.png" alt="logo juspsi" class="img-fluid"></div>
-          <ul>
-            <li class="button"><img src="images/lupa.png" alt="lupa" class="img-fluid"></li>
-            <li class="button"><a href=""><img src="images/user.png" alt="">Login |</a> <a href="">Criar conta</a></li>
-            <li class="menu" onclick="abrir()"><a href="">
-              <div>
-                <span></span>
-                <span></span>
-                <span></span>
+        <nav class="navbar navbar-expand-xs">
+          <a href="" class="navbar-brand logo-nav"><img src="images/logo.png" alt="logo juspsi" class="img-fluid"></a>
+          <div class="responsive-button button ms-auto"><a href="#"><img src="images/lupa.png" alt="lupa"></a></div>
+          <div class="responsive-button button"><a href="#"><img src="images/user.png" alt="usuario"> Login | criar conta</a></div>
+          <button class="navbar-toggler menuButton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSite" aria-controls="navbarSite" aria-expanded="false" aria-label="Toggle navigation">
+            <div>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <p>MENU</p>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSite">
+            <ul class="navbar-nav" id="lista-link">
+              <div class="lista">
+                <div>
+                  <li class="nav-item">
+                    <a href="#"class="nav-link">> HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">> INSTITUCIONAL</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">> NOVIDADES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">> MATERIAIS GRATUITOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">> DEPOIMENTOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">> CONTATO</a>
+                  </li>
+                </div>
+  
+                <div>
+                  <li class="nav-item">
+                    <a href="#"class="nav-link">Cursos de Direito</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Cursos de Psicologia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Cursos de Serviço Social</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Cursos Preparatórios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Coaching e Inteligência Emocional</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Cursos Para sua Empresa</a>
+                  </li>
+                </div>
               </div>
-              <p>MENU</p>
-            </a></li>
-          </ul>
+            </ul>
+          </div>
         </nav>
         <div class="texto-header">
           <div>
@@ -58,34 +103,51 @@
           <h2>PRINCIPAIS CATEGORIAS</h2>
           <p>Acesse conteúdos da sua área, e experimente novos campos de atuação, expandindo as suas estratégias, técnicas e possibilidades de ingresso no mercado de trabalho</p>
         </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="cursos-itens">
+                <a href="" class="curso-direito">
+                  <h3>Cursos de Direito</h3>
+                  <img src="images/mais.png" alt="simbolo mais">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cursos-itens">
+                <a href="" class="curso-psicologia">
+                  <h3>Cursos de Psicologia</h3>
+                  <span></span>
+                  <p>Aprenda a prática da Psicologia, com profissionais consolidados e qualificados no mercado</p>
+                  <img src="images/mais.png" alt="simbolo mais">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cursos-itens">
+                <a href="" class="servico-social">
+                  <h3>Serviço Social</h3>
+                  <img src="images/mais.png" alt="simbolo mais">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cursos-itens">
+                <a href="" class="cursos-preparatorios">
+                  <h3>Cursos Preparatórios</h3>
+                  <img src="images/mais.png" alt="simbolo mais">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
         <div class="cursos-categorias">
           <div class="cursos">
-            <div class="cursos-itens">
-              <a href="">
-                <h3>Cursos de Direito</h3>
-                <img src="images/mais.png" alt="simbolo mais">
-              </a>
-            </div>
-            <div class="cursos-itens">
-              <a href="">
-                <h3>Cursos de Psicologia</h3>
-                <span></span>
-                <p>Aprenda a prática da Psicologia, com profissionais consolidados e qualificados no mercado</p>
-                <img src="images/mais.png" alt="simbolo mais">
-              </a>
-            </div>
-            <div class="cursos-itens">
-              <a href="">
-                <h3>Serviço Social</h3>
-                <img src="images/mais.png" alt="simbolo mais">
-              </a>
-            </div>
-            <div class="cursos-itens">
-              <a href="">
-                <h3>Cursos Preparatórios</h3>
-                <img src="images/mais.png" alt="simbolo mais">
-              </a>
-            </div>
+            
+
+
           </div>
         </div>
         <div class="texto-categorias">
@@ -192,6 +254,40 @@
                 </a>
               </div>
             </div>
+            <div class="swiper-slide">
+              <div class="principais-cursos">
+                <a href="" class=" raciocinio">
+                  <div class="cursos-texto">
+                    <span>CURSO PRESENCIAL</span>
+                    <h4>Raciocínio técnico em psicologia</h4>
+                    <div class="classificacao">
+                      <img src="images/estrela-cheia.png" alt="estrela" class="img-fluid">
+                      <img src="images/estrela-cheia.png" alt="estrela" class="img-fluid">
+                      <img src="images/estrela-metade.png" alt="meia estrela" class="img-fluid">
+                      <p>3,5</p>
+                    </div>
+                    <div class="beneficios">
+                      <div>
+                        <img src="images/certificado-cursos.png" alt="certificado" class="img-fluid">
+                        <p>Certificado 20h</p>
+                      </div>
+                      <div>
+                        <img src="images/local.png" alt="pin de localização" class="img-fluid">
+                        <p>SP</p>
+                      </div>
+                      <div>
+                        <img src="images/valor.png" alt="cifrao" class="img-fluid">
+                        <p>R$ <b>259,90</b></p>
+                      </div>
+                      <div>
+                        <img src="images/calendario.png" alt="calendario" class="img-fluid">
+                        <p>27/06/2021</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
@@ -227,19 +323,19 @@
           <h1>DIFERENCIAS JUSPSI</h1>
           <div class="diferenciais-itens">
             <div>
-              <img src="images/caixa.png" alt="caixa">
+              <img src="images/caixa.png" alt="caixa" class="img-fluid">
               <p>Metodologia didática, prática e transformadora</p>
             </div>
             <div>
-              <img src="images/livro.png" alt="livro">
+              <img src="images/livro.png" alt="livro" class="img-fluid">
               <p>Trabalhamos com métodos de disciplinas multidisciplinares.</p>
             </div>
             <div>
-              <img src="images/quebra-cabeca.png" alt="neurociência">
+              <img src="images/quebra-cabeca.png" alt="neurociência" class="img-fluid">
               <p>Utilizamos neurociência que garante maior absorção dos conteúdos.</p>
             </div>
             <div>
-              <img src="images/suporte.png" alt="suporte ao aluno">
+              <img src="images/suporte.png" alt="suporte ao aluno" class="img-fluid">
               <p>Damos suporte ao aluno para ingresso no mercado de trabalho.</p>
             </div>
           </div>
@@ -311,8 +407,8 @@
       <div class="container-sobre">
         <div class="infos">
           <div class="infos-links">
-            <a href="#"><img src="images/seta-baixo.png" alt="seta apontando para baixo" class="img-fluid"> INSTITUCIONAL</a>
-            <ul>
+            <a href="#institucional"><img src="images/seta-baixo.png" alt="seta apontando para baixo" class="img-fluid"> INSTITUCIONAL</a>
+            <ul id="institucional">
               <li><a href="">A empresa</a></li>
               <li><a href="">Novidades</a></li>
               <li><a href="">Materiais gratuitos</a></li>
@@ -323,16 +419,16 @@
           </div>
           <div class="infos-links">
             <div>
-              <a href="#"><img src="images/seta-baixo.png" alt="seta apontando para baixo" class="img-fluid">CURSOS PREPARATÓRIOS</a>
-              <ul>
+              <a href="#preparatorios"><img src="images/seta-baixo.png" alt="seta apontando para baixo" class="img-fluid">CURSOS PREPARATÓRIOS</a>
+              <ul id="#preparatorios">
                 <li><a href="">Presenciais</a></li>
                 <li><a href="">Telepresenciais</a></li>
                 <li><a href="">Simulados online</a></li>
               </ul>
             </div>
             <div>
-              <a href="#"><img src="images/seta-baixo.png" alt="seta apontando para baixo">COACHING E INTELIGÊNCIA EMOCIONAL</a>
-              <ul>
+              <a href="#coach"><img src="images/seta-baixo.png" alt="seta apontando para baixo">COACHING E INTELIGÊNCIA EMOCIONAL</a>
+              <ul id="coach">
                 <li><a href="">Coaching para concursos públicos</a></li>
                 <li><a href="">Coaching de carreira</a></li>
                 <li><a href="">Inteligência emocional</a></li>
@@ -340,8 +436,8 @@
             </div>
           </div>
           <div class="infos-links">
-            <a href="#"><img src="images/seta-baixo.png" alt="seta apontando para baixo" class="img-fluid">PARA SUA EMPRESA</a>
-            <ul>
+            <a href="#empresa"><img src="images/seta-baixo.png" alt="seta apontando para baixo" class="img-fluid">PARA SUA EMPRESA</a>
+            <ul id="empresa">
               <h4>EMPRESAS PÚBLICAS</h4>
               <li><a href="">Cursos e treinamentos</a></li>
               <li><a href="">Assessoria técnica</a></li>
@@ -353,31 +449,27 @@
             </ul>
           </div>
           <div class="infos-links">
-            <a href="#"><img src="images/seta-baixo.png" alt="seta apontando para baixo" class="img-fluid">CURSOS</a>
-            <div>
-              <h4>DIREITO</h4>
+            <a href="#cursos-link"><img src="images/seta-baixo.png" alt="seta apontando para baixo" class="img-fluid">CURSOS</a>
+            <ul id="cursos-link">
               <ul>
+                <h4>DIREITO</h4>
                 <li><a href="">Clubes de assinatura</a></li>
                 <li><a href="">Cursos presenciais</a></li>
                 <li><a href="">Cursos online</a></li>
               </ul>
-            </div>
-            <div>
-              <h4>PSICOLOGIA</h4>
               <ul>
+                <h4>PSICOLOGIA</h4>
                 <li><a href="">Clubes de assinatura</a></li>
                 <li><a href="">Cursos presenciais</a></li>
                 <li><a href="">Cursos online</a></li>
               </ul>
-            </div>
-            <div>
-              <h4>SERVIÇO SOCIAL</h4>
               <ul>
+                <h4>SERVIÇO SOCIAL</h4>
                 <li><a href="">Clubes de assinatura</a></li>
                 <li><a href="">Cursos presenciais</a></li>
                 <li><a href="">Cursos online</a></li>
               </ul>
-            </div>
+            </ul>
           </div>
         </div>
         <div class="certificacoes-container">
@@ -438,14 +530,8 @@
   </footer>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
-    const menu = document.getElementById("nav-bar");
-    function abrir () {
-      menu.classList.toggle('active');
-    }
-
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
+      slidesPerView: 4,
       centeredSlides: true,
       pagination: {
         el: ".swiper-pagination",

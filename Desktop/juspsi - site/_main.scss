@@ -30,80 +30,96 @@ $branco: #FFFFFF;
     width: 100%;
   }
 }
-
-.cursos-categorias {
+.cursos {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  .cursos {
+}
+.cursos-itens {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 538px;
+  height: 530px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .curso-direito {
+    background-image: url('images/direito.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height:538px;
+    height: 100%;
+    max-width: 538px;
+    width: 100%;
+  }
+  .curso-psicologia {
+    background-image: url('images/psicologia.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 538px;
+    height: 100%;
+    max-width: 538px;
+    width: 100%;
+  }
+  .servico-social {
+    background-image: url('images/servico-social.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 538px;
+    height: 100%;
+    max-width: 538px;
+    width: 100%;
+  }
+  .cursos-preparatorios {
+    background-image: url('images/cursos-preparatorios.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 538px;
+    max-width: 538px;
+    width: 100%;
+    height: 100%;
+  }
+  span {
+    width: 31px;
+    background-color: $laranja;
+    border: 2px solid $laranja;
+  }
+  a {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 326px;
-    width: 100%;
-    .cursos-itens {
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 538px;
-      height: 530px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      &:first-of-type {
-        background-image: url('images/direito.png');
-      }
-      &:nth-of-type(2) {
-        background-image: url('images/psicologia.png');
-      }
-      &:nth-of-type(3) {
-        background-image: url('images/servico-social.png');
-      }
-      &:nth-of-type(4) {
-        background-image: url('images/cursos-preparatorios.png');
-      }
-      span {
-        width: 31px;
-        background-color: $laranja;
-        border: 2px solid $laranja;
-      }
-      a {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        text-decoration: none;
-        h3 {
-          font-weight: 800;
-          font-size: 29px;
-          line-height: 30px;
-          text-align: center;
-          padding-bottom: 40px;
-        }
-        p {
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 25px;
-          text-align: center;
-          padding-top: 16px;
-          padding-bottom: 30px;
-        }
-      }
-      img {
-        border: 3px solid $laranja;
-        border-radius: 100%;
-        padding: 15px;
-      }
+    color: white;
+    text-decoration: none;
+    h3 {
+      font-weight: 800;
+      font-size: 29px;
+      line-height: 30px;
+      text-align: center;
+      padding-bottom: 40px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      padding-top: 16px;
+      padding-bottom: 30px;
     }
   }
+  img {
+    border: 3px solid $laranja;
+    border-radius: 100%;
+    padding: 15px;
+  }
 }
-
 .principais-cursos {
   .cognitivo {
     background-image: url('images/cerebro.png');
     background-repeat: no-repeat;
-    width: 490px;
+    width: 400px;
     height: 490px;
     display: flex;
     flex-direction: column;
@@ -113,7 +129,7 @@ $branco: #FFFFFF;
   .violencia {
     background-image: url('images/violencia-domestica.png');
     background-repeat: no-repeat;
-    width: 490px;
+    width: 400px;
     height: 490px;
     display: flex;
     flex-direction: column;
@@ -123,7 +139,17 @@ $branco: #FFFFFF;
   .infantil {
     background-image: url('images/ursinho.png');
     background-repeat: no-repeat;
-    width: 490px;
+    width: 400px;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 50px;
+  }
+  .raciocinio {
+    background-image: url('images/raciocinio.png');
+    background-repeat: no-repeat;
+    width: 400px;
     height: 490px;
     display: flex;
     flex-direction: column;

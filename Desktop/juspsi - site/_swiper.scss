@@ -1,3 +1,4 @@
+$azul-escuro: #31306C;
 .swiper {
   width: 100%;
   height: 100%;
@@ -28,8 +29,6 @@
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
@@ -39,7 +38,6 @@
   height: 8px;
   padding: 25px;
   border-radius: 100%;
-  right: 250px;
 }
 
 .swiper-button-prev {
@@ -48,9 +46,18 @@
   height: 8px;
   padding: 25px;
   border-radius: 100%;
-  left: 250px;
 }
-
+span .swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,8px));
+  height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,8px));
+  display: inline-block;
+  border-radius: 50%;
+  background: var(--swiper-pagination-bullet-inactive-color,$azul-escuro);
+  // /* opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
+  // &:active {
+  //   background-color: $azul-escuro;
+  // }
+}
 .titulo-depoimentos .swiper-pagination {
-  display: block;
+
 }

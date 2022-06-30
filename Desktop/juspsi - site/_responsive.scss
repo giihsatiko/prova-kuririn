@@ -1,12 +1,50 @@
 @media (max-width: 576px) {
   // header
   .desconto {
+    position: static;
     p {
       font-weight: 400;
       font-size: 15px;
       line-height: 18.15px;
       text-align: center;
       max-width: 290px;
+    }
+  }
+  .container-nav {
+    background-position: center;
+    height: 500px;
+  }
+  .navbar-brand {
+    img {
+      width: 138px;
+    }
+  }
+  nav div {
+    margin: 0;
+  }
+  .responsive-button {
+    display: none;
+  }
+  .lista {
+    flex-direction: column;
+    align-items: center;
+    div:first-of-type {
+      width: 100%;
+      font-size: 18px;
+    }
+    .nav-item {
+      .nav-link {
+        color: white;
+        &:first-of-type {
+          width: 100%;
+          text-align: center;
+        }
+        &:nth-of-type(2) {
+          font-size: 20px;
+          width: 100%;
+          text-align: center;
+        }
+      }
     }
   }
   .texto-header {
@@ -103,35 +141,35 @@
     flex-direction: column;
     padding-top: 0;
     gap: 0;
+    align-items: flex-start;
   }
-  .infos-links {
-    .dropdown button {
-      color: white;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 16.94px;
-    }
-    .button {
-      display: none;
-    }
-    img {
-      display: inline;
-    }
-    ul {
-      width: 260px;
-    }
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  .container-sobre {
+    .infos-links {
+      img {
+        display: block;
+      }
       &:hover {
         ul {
-          display: block;
+          display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         }
+      }
+      .button {
+        display: none;
+      }
+      ul {
+        width: 260px;
+        display: none;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        color: white;
       }
     }
   }
-
   .certificacoes-itens {
     display: none;
   }
@@ -142,5 +180,8 @@
       padding-left: 0;
       gap: 20px;
     }
+  }
+  .whatsapp, .subir {
+    display: none;
   }
 }
