@@ -17,7 +17,7 @@
 </head>
 <body>
   <header>
-    <div class="container-fluid">
+    <div class="container-fluid" id="topo">
       <div class="desconto">
         <p>Só Hoje! Desconto de 50% nos <a href="">cursos preparatórios</a> - <b>Termina em 00:58:16h</b></p>
       </div>
@@ -25,61 +25,74 @@
         <nav class="navbar navbar-expand-xs">
           <a href="" class="navbar-brand logo-nav"><img src="images/logo.png" alt="logo juspsi" class="img-fluid"></a>
           <div class="responsive-button button ms-auto"><a href="#"><img src="images/lupa.png" alt="lupa"></a></div>
-          <div class="responsive-button button"><a href="#"><img src="images/user.png" alt="usuario"> Login | criar conta</a></div>
-          <button class="navbar-toggler menuButton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSite" aria-controls="navbarSite" aria-expanded="false" aria-label="Toggle navigation">
-            <div>
+          <div class="responsive-button button"><a href="#"><img src="images/user.png" alt="usuario" class="img-fluid"> Login | criar conta</a></div>
+          <button class="btn menuButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+            <div class="burguer">
               <span></span>
               <span></span>
               <span></span>
             </div>
             <p>MENU</p>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSite">
-            <ul class="navbar-nav" id="lista-link">
-              <div class="lista">
-                <div>
-                  <li class="nav-item">
-                    <a href="#"class="nav-link">> HOME</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">> INSTITUCIONAL</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">> NOVIDADES</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">> MATERIAIS GRATUITOS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">> DEPOIMENTOS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">> CONTATO</a>
-                  </li>
+          <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+              <a href="" class="navbar-brand logo-nav"><img src="images/logo.png" alt="logo juspsi" class="img-fluid"></a>
+              <button type="button" class="menuButton" data-bs-dismiss="offcanvas" aria-label="Close">
+                <div class="burguer">
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </div>
-  
-                <div>
-                  <li class="nav-item">
-                    <a href="#"class="nav-link">Cursos de Direito</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">Cursos de Psicologia</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">Cursos de Serviço Social</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">Cursos Preparatórios</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">Coaching e Inteligência Emocional</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">Cursos Para sua Empresa</a>
-                  </li>
+                <p>MENU</p>
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav">
+                <div class="lista">
+                  <div>
+                    <li class="nav-item">
+                      <a href="#"class="nav-link">> HOME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">> INSTITUCIONAL</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">> NOVIDADES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">> MATERIAIS GRATUITOS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">> DEPOIMENTOS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">> CONTATO</a>
+                    </li>
+                  </div>
+    
+                  <div>
+                    <li class="nav-item">
+                      <a href="#"class="nav-link">Cursos de Direito</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Cursos de Psicologia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Cursos de Serviço Social</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Cursos Preparatórios</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Coaching e Inteligência Emocional</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Cursos Para sua Empresa</a>
+                    </li>
+                  </div>
                 </div>
-              </div>
-            </ul>
+              </ul>
+            </div>
           </div>
         </nav>
         <div class="texto-header">
@@ -87,8 +100,8 @@
             <h1>Terapia cognitivo comportamental</h1>
             <p>Passo a passo para se tornar um excelente psicoterapeuta.</p>
             <div class="button"><a href="">CLIQUE E CONHEÇA</a></div>
-            <div class="descer"><a href="#categorias">DESCER PÁGINA
-              <img src="images/risco-link.png" alt="">
+            <div class="descer"><a href="#fim">DESCER PÁGINA
+              <img src="images/risco-link.png" alt="seta para descer a página">
             </a></div>
           </div>
         </div>
@@ -98,7 +111,7 @@
 
   <main>
     <div class="container-fluid">
-      <div class="categorias" id="categorias">
+      <div class="categorias">
         <div class="texto-categorias">
           <h2>PRINCIPAIS CATEGORIAS</h2>
           <p>Acesse conteúdos da sua área, e experimente novos campos de atuação, expandindo as suas estratégias, técnicas e possibilidades de ingresso no mercado de trabalho</p>
@@ -107,48 +120,59 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="cursos-itens">
-                <a href="" class="curso-direito">
-                  <h3>Cursos de Direito</h3>
-                  <img src="images/mais.png" alt="simbolo mais">
+                <a href="" class="curso-link">
+                  <img src="images/direito.png" alt="biblioteca" class="img-fluid">
+                  <div class="texto-cursos">
+                    <h3>Cursos de Direito</h3>
+                    <span></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, est non venenatis semper, elit quam cursus nibh, sed varius nisi risus in leo. Curabitur aliquam lacus sit amet eleifend lacinia.</p>
+                    <img src="images/mais.png" alt="simbolo mais" class="mais img-fluid">
+                  </div>
                 </a>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="cursos-itens">
-                <a href="" class="curso-psicologia">
-                  <h3>Cursos de Psicologia</h3>
+                <a href=""  class="curso-link">
+                  <img src="images/psicologia.png" alt="mar" class="img-fluid">
+                  <div class="texto-cursos">
+                    <h3>Cursos de Psicologia</h3>
                   <span></span>
                   <p>Aprenda a prática da Psicologia, com profissionais consolidados e qualificados no mercado</p>
-                  <img src="images/mais.png" alt="simbolo mais">
+                  <img src="images/mais.png" alt="simbolo mais" class="mais img-fluid">
+                  </div>
                 </a>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="cursos-itens">
-                <a href="" class="servico-social">
-                  <h3>Serviço Social</h3>
-                  <img src="images/mais.png" alt="simbolo mais">
+                <a href="" class="curso-link">
+                  <img src="images/servico-social.png" alt="itens papelaria" class="img-fluid">
+                  <div class="texto-cursos">
+                    <h3>Serviço Social</h3>
+                    <span></span>
+                    <p>Praesent ac nisl at diam viverra blandit vulputate suscipit orci. Phasellus et turpis magna.</p>
+                    <img src="images/mais.png" alt="simbolo mais" class="mais img-fluid">
+                  </div>
                 </a>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="cursos-itens">
-                <a href="" class="cursos-preparatorios">
-                  <h3>Cursos Preparatórios</h3>
-                  <img src="images/mais.png" alt="simbolo mais">
+                <a href="" class="curso-link">
+                  <img src="images/cursos-preparatorios.png" alt="lampada incandescente" class="img-fluid">
+                  <div class="texto-cursos">
+                    <h3>Cursos Preparatórios</h3>
+                    <span></span>
+                    <p>Ut vitae arcu quam. Donec non tempus dui. Aliquam erat volutpat. Maecenas facilisis dapibus odio. </p>
+                    <img src="images/mais.png" alt="simbolo mais" class="mais img-fluid">
+                  </div>
                 </a>
               </div>
             </div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
-        </div>
-        <div class="cursos-categorias">
-          <div class="cursos">
-            
-
-
-          </div>
         </div>
         <div class="texto-categorias">
           <h2>PRINCIPAIS CURSOS</h2>
@@ -158,7 +182,8 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="principais-cursos">
-                <a href="" class="cognitivo">
+                <a href="">
+                  <img src="images/cerebro.png" class="img-fluid" alt="cerebro">
                   <div class="cursos-texto">
                     <span>CURSO ONLINE</span>
                     <h4>Terapia cognitivo comportamental</h4>
@@ -190,7 +215,8 @@
             </div>
             <div class="swiper-slide">
               <div class="principais-cursos">
-                <a href="" class="violencia">
+                <a href="">
+                  <img src="images/violencia-domestica.png" class="img-fluid" alt="mulher amarrada">
                   <div class="cursos-texto">
                     <span>CURSO ONLINE</span>
                     <h4>Violência Doméstica - Protocolo de atendimento e acompanhamento</h4>
@@ -222,7 +248,8 @@
             </div>
             <div class="swiper-slide">
               <div class="principais-cursos">
-                <a href="" class=" infantil">
+                <a href="">
+                  <img src="images/ursinho.png" class="img-fluid" alt="ursinho na floresta">
                   <div class="cursos-texto">
                     <span>CURSO PRESENCIAL</span>
                     <h4>Violência Sexual Infanto-Juvenil</h4>
@@ -256,7 +283,8 @@
             </div>
             <div class="swiper-slide">
               <div class="principais-cursos">
-                <a href="" class=" raciocinio">
+                <a href="">
+                  <img src="images/raciocinio.png" class="img-fluid" alt="esfera em puzzle">
                   <div class="cursos-texto">
                     <span>CURSO PRESENCIAL</span>
                     <h4>Raciocínio técnico em psicologia</h4>
@@ -293,7 +321,7 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
         </div>
-
+        <div class="button"><a href="">VER TODOS OS CURSOS</a></div>
       </div>
     </div>
   </main>
@@ -365,7 +393,7 @@
                   <p>“Curso maravilhoso! Super recomendo! dias de muita troca e compartilhamento de conhecimento. Parabéns psicóloga Lane por ser essa pessoa tão humana e uma profissional de extrema competência. A psicologia agradece por ter você como representante da nossa categoria!”</p>
                 </div>
                 <div class="link-depoimento">
-                  <a href=""><img src="images/seta-lado.png" alt="" class="img-fluid">CURSO DE COACHING</a>
+                  <a href="">> CURSO DE COACHING</a>
                 </div>
               </div>
             </div>
@@ -378,7 +406,7 @@
                   <p>“Só em um curso da Juspsi vc tem um clima tão intimista, supervisão individual de documentos, ufa! É demais!!! Em cada passo a preocupação de conferir se realmente aprendemos, o termômetro do curso é a nossa satisfação e a missão é nosso desenvolvimento técnico, são particularidades que somente a JUSPSI oferece!</p>
                 </div>
                 <div class="link-depoimento">
-                  <a href=""><img src="images/seta-lado.png" alt="" class="img-fluid">CURSO DE INTELIGÊNCIA EMOCIONAL</a>
+                  <a href="">> CURSO DE INTELIGÊNCIA EMOCIONAL</a>
                 </div>
               </div>
             </div>
@@ -392,7 +420,7 @@
                     Esse curso vai muito além da técnica! Obrigada por ter compartilhado tanto conhecimento!</p>
                 </div>
                 <div class="link-depoimento">
-                  <a href=""><img src="images/seta-lado.png" alt="" class="img-fluid">CURSO DE COACHING</a>
+                  <a href="">> CURSO DE COACHING</a>
                 </div>
               </div>
             </div>
@@ -403,103 +431,94 @@
     </div>
   </section>
   <footer>
-    <div class="container-fluid">
+    <div class="container-fluid" id="fim">
       <div class="container-sobre">
         <div class="infos">
-          <div class="infos-links">
+          <div class="infos-links" id="institucional">
             <a href="#institucional"><img src="images/seta-baixo.png" alt="seta apontando para baixo" class="img-fluid"> INSTITUCIONAL</a>
-            <ul id="institucional">
+            <ul>
               <li><a href="">A empresa</a></li>
               <li><a href="">Novidades</a></li>
               <li><a href="">Materiais gratuitos</a></li>
               <li><a href="">Depoimentos</a></li>
               <li><a href="">Contato</a></li>
             </ul>
-            <div class="button"><a href=""><img src="images/user.png" alt="">Login |</a> <a href="">Criar conta</a></div>
+            <div class="button"><a href=""><img src="images/user.png" alt="usuario">Login | Criar conta</a></div>
           </div>
           <div class="infos-links">
-            <div>
               <a href="#preparatorios"><img src="images/seta-baixo.png" alt="seta apontando para baixo" class="img-fluid">CURSOS PREPARATÓRIOS</a>
-              <ul id="#preparatorios">
+              <ul>
                 <li><a href="">Presenciais</a></li>
                 <li><a href="">Telepresenciais</a></li>
                 <li><a href="">Simulados online</a></li>
               </ul>
-            </div>
-            <div>
-              <a href="#coach"><img src="images/seta-baixo.png" alt="seta apontando para baixo">COACHING E INTELIGÊNCIA EMOCIONAL</a>
-              <ul id="coach">
+          </div>
+          <div class="infos-links"  id="coach">
+              <a href="#coach"><img src="images/seta-baixo.png" alt="seta apontando para baixo" class="img-fluid">COACHING E INTELIGÊNCIA EMOCIONAL</a>
+              <ul>
                 <li><a href="">Coaching para concursos públicos</a></li>
                 <li><a href="">Coaching de carreira</a></li>
                 <li><a href="">Inteligência emocional</a></li>
               </ul>
-            </div>
           </div>
-          <div class="infos-links">
+          <div class="infos-links"  id="empresa">
             <a href="#empresa"><img src="images/seta-baixo.png" alt="seta apontando para baixo" class="img-fluid">PARA SUA EMPRESA</a>
-            <ul id="empresa">
-              <h4>EMPRESAS PÚBLICAS</h4>
-              <li><a href="">Cursos e treinamentos</a></li>
-              <li><a href="">Assessoria técnica</a></li>
-            </ul>
-            <ul>
-              <h4>EMPRESAS PRIVADAS</h4>
-              <li><a href="">Cursos e treinamentos</a></li>
-              <li><a href="">Assessoria técnica</a></li>
-            </ul>
+            <div>
+              <ul>
+                <li class="titulo-lista"><a href="">EMPRESAS PÚBLICAS</a></li>
+                <li><a href="">Cursos e treinamentos</a></li>
+                <li><a href="">Assessoria técnica</a></li>
+              </ul>
+              <ul>
+                <li class="titulo-lista"><a href="">EMPRESAS PRIVADAS</a></li>
+                <li><a href="">Cursos e treinamentos</a></li>
+                <li><a href="">Assessoria técnica</a></li>
+              </ul>
+            </div> 
           </div>
-          <div class="infos-links">
+          <div class="infos-links" id="cursos-link">
             <a href="#cursos-link"><img src="images/seta-baixo.png" alt="seta apontando para baixo" class="img-fluid">CURSOS</a>
-            <ul id="cursos-link">
+            <ul>
               <ul>
-                <h4>DIREITO</h4>
+                <li class="titulo-lista"><a href="">DIREITO</a></li>
                 <li><a href="">Clubes de assinatura</a></li>
                 <li><a href="">Cursos presenciais</a></li>
                 <li><a href="">Cursos online</a></li>
               </ul>
               <ul>
-                <h4>PSICOLOGIA</h4>
+                <li class="titulo-lista"><a href="">PSICOLOGIA</a></li>
                 <li><a href="">Clubes de assinatura</a></li>
                 <li><a href="">Cursos presenciais</a></li>
                 <li><a href="">Cursos online</a></li>
               </ul>
               <ul>
-                <h4>SERVIÇO SOCIAL</h4>
+                <li class="titulo-lista"><a href="">SERVIÇO SOCIAL</a></li>
                 <li><a href="">Clubes de assinatura</a></li>
                 <li><a href="">Cursos presenciais</a></li>
                 <li><a href="">Cursos online</a></li>
               </ul>
             </ul>
           </div>
+          <div class="button show-button"><a href=""><img src="images/user.png" alt="usuario">Login | Criar conta</a></div>
         </div>
         <div class="certificacoes-container">
           <div>
             <div class="certificacoes">
               <h2>CERTIFICAÇÕES</h2>
-              <div class="certificacoes-itens">
-                <div>
-                  <a href=""><img src="images/certificacao.png" alt=""></a>
-                </div>
-                <div>
-                  <a href=""><img src="images/certificacao2.png" alt=""></a>
-                </div>
-                <div>
-                  <a href=""><img src="images/certificacao3.png" alt=""></a>
-                </div>
-                <div>
-                  <a href=""><img src="images/certificacao4.png" alt=""></a>
-                </div>
-                <div>
-                  <a href=""><img src="images/certificacao5.png" alt=""></a>
-                </div>
+              <a href="#certificados" class="seta-baixo"><img src="images/seta-preta.png" alt="seta apontando para baixo" class="img-fluid show-button"></a>
+              <div class="certificacoes-itens" id="certificados">
+                <a href=""><img src="images/certificacao.png" alt="logo endeavor"></a>
+                <a href=""><img src="images/certificacao2.png" alt="selo great place to work"></a>
+                <a href=""><img src="images/certificacao3.png" alt="logo ABF"></a>
+                <a href=""><img src="images/certificacao4.png" alt="logo amazon web services"></a>
+                <a href=""><img src="images/certificacao5.png" alt="logo google for education"></a>
               </div>
             </div>
             <div class="politicas-container">
               <div class="direitos">
                 <img src="images/logo2.png" alt="">
-                <p>2021 © Todos os direitos reservados - JUSPSI. Seja a sua melhor versão profissional | Criação</p>
-                <img src="images/logo-oxigenweb.png" alt="">
-              </div>
+                <p>2021 © Todos os direitos reservados - JUSPSI. Seja a sua melhor versão profissional | Criação <img src="images/logo-oxigenweb.png" alt="logo oxigenweb" class="img-fluid">
+                </div></p>
               <div class="politicas">
                 <a href="">Política de privacidade</a>
                 <a href="">Política de cookies</a>
@@ -507,16 +526,16 @@
             </div>
           </div>
           <div class="subir">
-            <a href="#categorias">
+            <a href="#topo">
               VOLTAR AO TOPO
-              <img src="images/risco-link.png" alt="">
+              <img src="images/risco-link.png" alt="seta para subir página">
             </a>
           </div>
         </div>
       </div>
       <div class="contatos">
         <div class="whatsapp">
-          <img src="images/whatsapp-icon.png" alt="icone-whatsapp" class="img-fluid">
+          <a href=""><img src="images/whatsapp-icon.png" alt="icone-whatsapp" class="img-fluid"></a>
         </div>
         <ul>
           <li><a href=""><i class="fa-brands fa-youtube fa-2x"></i></a></li>
@@ -539,10 +558,16 @@
       navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        300: {
+          slidesPerView: 1,
         },
+        1024: {
+          slidesPerView: 4,
+        },
+      },
     });
   </script>
-
-
 </body>
 </html>

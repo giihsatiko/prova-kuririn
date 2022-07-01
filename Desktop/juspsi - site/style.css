@@ -7,14 +7,10 @@
 }
 
 .desconto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 50px;
+  text-align: center;
   background-image: linear-gradient(to right, #31306C, #F07F3C);
   color: #FFFFFF;
-  position: fixed;
-  width: 100%;
-  z-index: 5;
 }
 .desconto p {
   padding-top: 10px;
@@ -40,8 +36,9 @@
   text-decoration: none;
   color: #FFFFFF;
 }
-.button:hover .container-nav {
-  overflow: hidden;
+.button:hover {
+  background-color: #FF650A;
+  color: #FFFFFF;
 }
 
 nav {
@@ -51,9 +48,7 @@ nav {
   margin: auto 30px;
   position: absolute;
   height: fit-content;
-}
-nav div {
-  margin: 80px 15px;
+  gap: 30px;
 }
 nav .menuButton {
   background-color: #FFFFFF;
@@ -69,9 +64,8 @@ nav .menuButton p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-nav .menuButton p {
   padding-top: 10px;
+  padding-left: 15px;
 }
 nav .menuButton span {
   background-color: #F07F3C;
@@ -82,12 +76,29 @@ nav .menuButton span {
   justify-content: space-between;
   margin-bottom: 5px;
 }
+nav .menuButton:hover {
+  margin-top: 0;
+}
+nav .menuButton:hover .burguer span:first-of-type {
+  display: none;
+}
+nav .menuButton:hover .burguer span:nth-of-type(2) {
+  transform: rotate(45deg) translate(5px);
+  transition: .15s ease-in;
+}
+nav .menuButton:hover .burguer span:nth-of-type(3) {
+  transform: rotate(-45deg) translate(8px);
+  transition: .15s ease-in;
+}
+nav .menuButton:hover .burguer #lista-link .nav-link .button {
+  padding: 20px 58px;
+}
 nav .lista {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
   background-image: linear-gradient(to right, #31306C, #F07F3C);
-  z-index: 1000;
+  height: 100%;
   list-style: none;
   height: fit-content;
 }
@@ -95,13 +106,14 @@ nav .lista div:first-of-type {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 nav .lista div:nth-of-type(2) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+}
+nav .nav-item:hover {
+  border-bottom: 3px solid #F07F3C;
 }
 nav .nav-item .nav-link {
   color: white;
@@ -111,12 +123,33 @@ nav .nav-item .nav-link:first-of-type {
   font-size: 18px;
   line-height: 45px;
   text-align: right;
+  margin: 0;
 }
 nav .nav-item .nav-link:nth-of-type(2) {
   font-weight: 400;
   font-size: 27px;
   line-height: 51px;
   text-align: right;
+  margin: 0;
+}
+
+.offcanvas {
+  background-image: linear-gradient(to right, #31306C, #F07F3C);
+}
+
+.offcanvas-top {
+  height: 100%;
+}
+
+.offcanvas-header {
+  justify-content: space-around;
+  background-image: linear-gradient(to right, #31306C, #F07F3C);
+}
+
+.offcanvas-body {
+  width: 100%;
+  padding: 0;
+  background-image: linear-gradient(to right, #31306C, #F07F3C);
 }
 
 .texto-header {
@@ -124,6 +157,7 @@ nav .nav-item .nav-link:nth-of-type(2) {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 80px;
 }
 .texto-header div {
   text-align: center;
@@ -157,6 +191,7 @@ nav .nav-item .nav-link:nth-of-type(2) {
   justify-content: center;
   align-items: center;
   margin-bottom: -300px;
+  position: absolute;
 }
 .texto-header div .descer a img {
   width: 2px;
@@ -168,6 +203,9 @@ nav .nav-item .nav-link:nth-of-type(2) {
   align-items: center;
   background-color: #31306C;
   height: fit-content;
+}
+.categorias .button {
+  margin-bottom: 50px;
 }
 
 .texto-categorias {
@@ -209,46 +247,25 @@ nav .nav-item .nav-link:nth-of-type(2) {
   justify-content: center;
   align-items: center;
 }
-.cursos-itens .curso-direito {
-  background-image: url("images/direito.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+.cursos-itens .curso-link {
   max-height: 538px;
   height: 100%;
   max-width: 538px;
   width: 100%;
+  position: relative;
 }
-.cursos-itens .curso-psicologia {
-  background-image: url("images/psicologia.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-height: 538px;
-  height: 100%;
-  max-width: 538px;
-  width: 100%;
+.cursos-itens .curso-link:hover {
+  transform: scale(1.2);
+  transition-duration: 1s;
 }
-.cursos-itens .servico-social {
-  background-image: url("images/servico-social.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-height: 538px;
-  height: 100%;
-  max-width: 538px;
-  width: 100%;
-}
-.cursos-itens .cursos-preparatorios {
-  background-image: url("images/cursos-preparatorios.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-height: 538px;
-  max-width: 538px;
-  width: 100%;
-  height: 100%;
+.cursos-itens .curso-link:hover > img {
+  filter: brightness(50%);
 }
 .cursos-itens span {
   width: 31px;
   background-color: #F07F3C;
   border: 2px solid #F07F3C;
+  display: none;
 }
 .cursos-itens a {
   display: flex;
@@ -272,52 +289,46 @@ nav .nav-item .nav-link:nth-of-type(2) {
   text-align: center;
   padding-top: 16px;
   padding-bottom: 30px;
+  display: none;
+  width: 253px;
 }
-.cursos-itens img {
+.cursos-itens a:hover p, .cursos-itens a:hover span {
+  display: block;
+}
+.cursos-itens a:hover .mais {
+  background-color: #F07F3C;
+}
+
+.texto-cursos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.mais {
   border: 3px solid #F07F3C;
   border-radius: 100%;
   padding: 15px;
 }
 
-.principais-cursos .cognitivo {
-  background-image: url("images/cerebro.png");
-  background-repeat: no-repeat;
-  width: 400px;
-  height: 490px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding-left: 50px;
+.principais-cursos:hover {
+  transform: scale(1.2);
+  transition-duration: 1s;
 }
-.principais-cursos .violencia {
-  background-image: url("images/violencia-domestica.png");
-  background-repeat: no-repeat;
-  width: 400px;
-  height: 490px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding-left: 50px;
+.principais-cursos:hover a > img {
+  filter: brightness(50%);
 }
-.principais-cursos .infantil {
-  background-image: url("images/ursinho.png");
-  background-repeat: no-repeat;
-  width: 400px;
+.principais-cursos img {
+  position: relative;
   height: 490px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding-left: 50px;
 }
-.principais-cursos .raciocinio {
-  background-image: url("images/raciocinio.png");
-  background-repeat: no-repeat;
-  width: 400px;
-  height: 490px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding-left: 50px;
+.principais-cursos .cursos-texto {
+  position: absolute;
+  left: 10%;
+  z-index: 1;
+  top: 35%;
 }
 .principais-cursos a {
   text-decoration: none;
@@ -340,7 +351,6 @@ nav .nav-item .nav-link:nth-of-type(2) {
   line-height: 25px;
   text-align: left;
   max-width: 270px;
-  padding-bottom: 12px;
 }
 .principais-cursos .cursos-texto p {
   font-weight: 500;
@@ -351,7 +361,6 @@ nav .nav-item .nav-link:nth-of-type(2) {
 .principais-cursos .cursos-texto .classificacao {
   display: flex;
   align-items: center;
-  padding-bottom: 15px;
 }
 .principais-cursos .cursos-texto .classificacao p {
   color: #F07F3C;
@@ -410,7 +419,7 @@ nav .nav-item .nav-link:nth-of-type(2) {
 }
 .conheca-container .texto-conheca div {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   color: #643A9B;
 }
@@ -433,6 +442,7 @@ nav .nav-item .nav-link:nth-of-type(2) {
   max-width: 448px;
   text-align: left;
   padding-bottom: 42px;
+  padding-top: 20px;
 }
 
 .diferenciais-container {
@@ -538,7 +548,7 @@ nav .nav-item .nav-link:nth-of-type(2) {
   text-align: center;
   border-bottom: 2px solid #E2E2E2;
   max-width: 350px;
-  height: 189px;
+  height: 250px;
 }
 .container-depoimentos .depoimentos-item .link-depoimento {
   display: flex;
@@ -570,7 +580,6 @@ nav .nav-item .nav-link:nth-of-type(2) {
 .container-sobre .infos {
   display: flex;
   justify-content: center;
-  align-items: center;
   color: white;
   gap: 40px;
   padding-top: 138px;
@@ -580,6 +589,9 @@ nav .nav-item .nav-link:nth-of-type(2) {
   height: fit-content;
   background-color: #31306C;
 }
+.container-sobre .infos-links .button:not(a, div) {
+  color: #F07F3C;
+}
 .container-sobre .infos-links > a, .container-sobre .infos-links div {
   color: white;
   text-decoration: none;
@@ -587,7 +599,10 @@ nav .nav-item .nav-link:nth-of-type(2) {
   font-size: 20px;
   line-height: 24.2px;
   text-align: left;
-  padding-bottom: 12px;
+  max-width: 250px;
+}
+.container-sobre .infos-links > a:hover {
+  color: #F07F3C;
 }
 .container-sobre .infos-links img {
   display: none;
@@ -595,9 +610,13 @@ nav .nav-item .nav-link:nth-of-type(2) {
 .container-sobre ul {
   padding-left: 0;
   background-color: #31306C;
+  padding-bottom: 30px;
 }
-.container-sobre ul h4 {
-  color: white;
+.container-sobre ul .titulo-lista a {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24.2px;
+  text-align: left;
 }
 .container-sobre ul li {
   list-style: none;
@@ -610,12 +629,23 @@ nav .nav-item .nav-link:nth-of-type(2) {
   line-height: 25px;
   text-align: left;
 }
-.container-sobre h3 {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24.2px;
-  text-align: left;
-  padding-bottom: 12px;
+.container-sobre ul li:hover a {
+  color: #F07F3C;
+}
+
+.button:last-of-type a {
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.button:last-of-type a img {
+  display: block;
+  padding-right: 10px;
+}
+
+.show-button {
+  display: none;
 }
 
 .container-seta {
@@ -634,6 +664,8 @@ nav .nav-item .nav-link:nth-of-type(2) {
   justify-content: center;
 }
 .certificacoes-container h2 {
+  padding-top: 59px;
+  padding-bottom: 16px;
   color: #565656;
 }
 .certificacoes-container .certificacoes {
@@ -643,23 +675,17 @@ nav .nav-item .nav-link:nth-of-type(2) {
   flex-direction: column;
 }
 .certificacoes-container .certificacoes-itens {
-  max-width: 160px;
   border-radius: 3px;
   gap: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 93px;
-  width: 160px;
 }
 .certificacoes-container .certificacoes-itens > div {
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.certificacoes-container .certificacoes-itens > div img {
-  width: 100%;
 }
 
 .politicas-container {
@@ -672,6 +698,7 @@ nav .nav-item .nav-link:nth-of-type(2) {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
 }
 .politicas-container .direitos p {
   color: #8B8B8B;
@@ -695,6 +722,9 @@ nav .nav-item .nav-link:nth-of-type(2) {
   line-height: 18.75px;
   text-align: right;
 }
+.politicas-container .politicas a:hover {
+  color: #F07F3C;
+}
 
 .contatos {
   display: flex;
@@ -714,10 +744,13 @@ nav .nav-item .nav-link:nth-of-type(2) {
   color: white;
 }
 .contatos .whatsapp {
-  left: 0;
-  bottom: 0;
+  left: 20px;
+  bottom: 20px;
   position: fixed;
   z-index: 5;
+}
+.contatos .whatsapp:hover {
+  filter: brightness(115%);
 }
 
 .subir a {
@@ -742,14 +775,11 @@ nav .nav-item .nav-link:nth-of-type(2) {
   height: 100%;
 }
 
-.mySwiper {
-  height: fit-content;
-}
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   width: fit-content;
+  margin-right: 0;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -777,6 +807,9 @@ nav .nav-item .nav-link:nth-of-type(2) {
   padding: 25px;
   border-radius: 100%;
 }
+.swiper-button-next:hover {
+  background-color: #F07F3C;
+}
 
 .swiper-button-prev {
   background-color: white;
@@ -784,6 +817,9 @@ nav .nav-item .nav-link:nth-of-type(2) {
   height: 8px;
   padding: 25px;
   border-radius: 100%;
+}
+.swiper-button-prev:hover {
+  background-color: #F07F3C;
 }
 
 span .swiper-pagination-bullet {
@@ -795,8 +831,16 @@ span .swiper-pagination-bullet {
 }
 
 @media (max-width: 576px) {
+  .offcanvas {
+    height: 100%;
+  }
+
   .desconto {
-    position: static;
+    background-color: #31306C;
+    background-image: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
   }
   .desconto p {
     font-weight: 400;
@@ -811,12 +855,12 @@ span .swiper-pagination-bullet {
     height: 500px;
   }
 
-  .navbar-brand img {
-    width: 138px;
+  .navbar {
+    flex-wrap: nowrap;
   }
 
-  nav div {
-    margin: 0;
+  .navbar-brand img {
+    width: 98px;
   }
 
   .responsive-button {
@@ -825,11 +869,16 @@ span .swiper-pagination-bullet {
 
   .lista {
     flex-direction: column;
-    align-items: center;
+    height: 100%;
   }
   .lista div:first-of-type {
     width: 100%;
     font-size: 18px;
+    background-image: linear-gradient(to right, #31306C, #643A9B, #F07F3C);
+  }
+  .lista div:nth-of-type(2) {
+    background-image: none;
+    background-color: #31306C;
   }
   .lista .nav-item .nav-link {
     color: white;
@@ -864,11 +913,37 @@ span .swiper-pagination-bullet {
     max-width: 290px;
   }
 
-  .cursos-categorias .cursos .cursos-itens {
-    max-height: 138px;
-    max-width: 142px;
+  .cursos-itens a h3, .cursos-itens a p {
+    display: none;
   }
-  .cursos-categorias .cursos .cursos-itens a h3, .cursos-categorias .cursos .cursos-itens a p {
+
+  .principais-cursos img {
+    height: 100%;
+    width: 100%;
+  }
+  .principais-cursos .cursos-texto {
+    position: sticky;
+  }
+
+  .principais-cursos a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .principais-cursos .cursos-texto h4 {
+    font-size: 20px;
+    padding-bottom: 0;
+  }
+  .principais-cursos .cursos-texto .beneficios {
+    flex-direction: column;
+  }
+
+  .swiper-button-next {
+    display: none;
+  }
+
+  .swiper-button-prev {
     display: none;
   }
 
@@ -898,27 +973,6 @@ span .swiper-pagination-bullet {
     display: none;
   }
 
-  .principais-cursos .cognitivo, .principais-cursos .violencia, .principais-cursos .infantil {
-    width: fit-content;
-    background-size: contain;
-  }
-  .principais-cursos a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .principais-cursos .cursos-texto {
-    padding-top: 50px;
-    height: 150px;
-  }
-  .principais-cursos .cursos-texto h4 {
-    font-size: 20px;
-    padding-bottom: 0;
-  }
-  .principais-cursos .cursos-texto .beneficios {
-    flex-direction: column;
-  }
-
   .infos {
     flex-direction: column;
     padding-top: 0;
@@ -928,6 +982,11 @@ span .swiper-pagination-bullet {
 
   .container-sobre .infos-links img {
     display: block;
+    margin-right: 10px;
+  }
+  .container-sobre .infos-links:hover img {
+    transition: ease-in-out 0.5s;
+    transform: rotate(180deg);
   }
   .container-sobre .infos-links:hover ul {
     display: flex;
@@ -948,8 +1007,17 @@ span .swiper-pagination-bullet {
     color: white;
   }
 
-  .certificacoes-itens {
+  .show-button {
+    display: block;
+  }
+
+  .certificacoes-itens a {
+    width: 100%;
     display: none;
+  }
+  .certificacoes-itens .seta-baixo:hover a {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .politicas-container {
@@ -959,6 +1027,10 @@ span .swiper-pagination-bullet {
     flex-direction: column;
     padding-left: 0;
     gap: 20px;
+  }
+
+  .contatos ul {
+    gap: 38px;
   }
 
   .whatsapp, .subir {

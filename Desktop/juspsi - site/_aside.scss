@@ -27,7 +27,7 @@ $azul-escuro: #31306C;
     }
     div {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       color: $roxo;
       h3 {
@@ -50,6 +50,7 @@ $azul-escuro: #31306C;
       max-width: 448px;
       text-align: left;
       padding-bottom: 42px;
+      padding-top: 20px;
     }
   }
 }

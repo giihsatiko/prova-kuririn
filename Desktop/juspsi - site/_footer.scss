@@ -15,7 +15,6 @@ $azul-escuro: #31306C;
   .infos {
     display: flex;
     justify-content: center;
-    align-items: center;
     color: white;
     gap: 40px;
     padding-top: 138px;
@@ -24,6 +23,9 @@ $azul-escuro: #31306C;
     max-width: 270px;
     height: fit-content;
     background-color: $azul-escuro;
+    .button:not(a,div) {
+      color: $laranja;
+    }
     &>a,div {
       color: white;
       text-decoration: none;
@@ -31,7 +33,10 @@ $azul-escuro: #31306C;
       font-size: 20px;
       line-height: 24.2px;
       text-align: left;
-      padding-bottom: 12px;
+      max-width: 250px;
+    }
+    &>a:hover {
+      color: $laranja;
     }
     img {
       display: none;
@@ -40,8 +45,14 @@ $azul-escuro: #31306C;
   ul {
     padding-left: 0;
     background-color: $azul-escuro;
-    h4 {
-      color: white;
+    padding-bottom: 30px;
+    .titulo-lista {
+      a {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24.2px;
+        text-align: left;
+      }
     }
   }
   ul li {
@@ -54,16 +65,24 @@ $azul-escuro: #31306C;
       line-height: 25px;
       text-align: left;
     }
-  }
-  h3 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24.2px;
-    text-align: left;
-    padding-bottom: 12px;
+    &:hover a {
+      color: $laranja;
+    }
   }
 }
-
+.button:last-of-type a {
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  img {
+    display: block;
+    padding-right: 10px;
+  }
+}
+.show-button {
+  display: none;
+}
 .container-seta {
   background-color: #F07F3C;
   display: flex;
@@ -78,6 +97,8 @@ $azul-escuro: #31306C;
   align-items: center;
   justify-content: center;
   h2 {
+    padding-top: 59px;
+    padding-bottom: 16px;
     color: #565656;
   }
   .certificacoes {
@@ -87,22 +108,16 @@ $azul-escuro: #31306C;
     flex-direction: column;
   }
   .certificacoes-itens {
-    max-width: 160px;
     border-radius: 3px;
     gap: 13px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 93px;
-    width: 160px;
     &>div {
       background-color: white;
       display: flex;
       justify-content: center;
       align-items: center;
-      img {
-        width: 100%;
-      }
     }
   }
 }
@@ -116,6 +131,7 @@ $azul-escuro: #31306C;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 12px;
     p {
       color: $cinza-escuro;
       font-family: 'Roboto', sans-serif;
@@ -137,6 +153,9 @@ $azul-escuro: #31306C;
       font-size: 16px;
       line-height: 18.75px;
       text-align: right;
+      &:hover {
+        color: $laranja;
+      }
     }
   }
 }
@@ -159,10 +178,13 @@ $azul-escuro: #31306C;
     }
   }
   .whatsapp {
-    left: 0;
-    bottom: 0;
+    left: 20px;
+    bottom: 20px;
     position: fixed;
     z-index: 5;
+    &:hover {
+      filter: brightness(115%);
+    }
   }
 }
 .subir a {
@@ -181,3 +203,4 @@ $azul-escuro: #31306C;
     margin-left: 60px;
   }
 }
+

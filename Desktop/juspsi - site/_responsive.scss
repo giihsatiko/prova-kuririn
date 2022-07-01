@@ -1,7 +1,14 @@
 @media (max-width: 576px) {
   // header
+  .offcanvas {
+    height: 100%;
+  }
   .desconto {
-    position: static;
+    background-color: #31306C;
+    background-image: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
     p {
       font-weight: 400;
       font-size: 15px;
@@ -14,23 +21,28 @@
     background-position: center;
     height: 500px;
   }
+  .navbar {
+    flex-wrap: nowrap;
+  }
   .navbar-brand {
     img {
-      width: 138px;
+      width: 98px;
     }
-  }
-  nav div {
-    margin: 0;
   }
   .responsive-button {
     display: none;
   }
   .lista {
     flex-direction: column;
-    align-items: center;
+    height: 100%;
     div:first-of-type {
       width: 100%;
       font-size: 18px;
+      background-image: linear-gradient(to right, $azul-escuro, $roxo, $laranja);
+    }
+    div:nth-of-type(2) {
+      background-image: none;
+      background-color: #31306C;
     }
     .nav-item {
       .nav-link {
@@ -72,20 +84,46 @@
       max-width: 290px;
     }
   }
-  .cursos-categorias {
-    .cursos {
-      .cursos-itens {
-        max-height: 138px;
-        max-width: 142px;
-        a {
-          h3,p {
-            display: none;
-          }
-        }
+  .cursos-itens {
+    a {
+      h3,p {
+        display: none;
       }
     }
   }
-
+  .principais-cursos {
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    .cursos-texto {
+      position: sticky;
+    }
+  }
+  .principais-cursos {
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .cursos-texto {
+      h4 {
+        font-size: 20px;
+        padding-bottom: 0;
+      }
+      .beneficios {
+        flex-direction: column;
+      }
+    }
+  }
+  .swiper-button-next {
+    display: none;
+  }
+  
+  .swiper-button-prev {
+    display: none;
+  }
   // aside
   .conheca-container {
     &>img {
@@ -113,29 +151,6 @@
   .diferenciais-container {
     display: none;
   }
-  // main 
-  .principais-cursos {
-    .cognitivo, .violencia, .infantil {
-      width: fit-content;
-      background-size: contain;
-    }
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .cursos-texto {
-      padding-top: 50px;
-      height: 150px;
-      h4 {
-        font-size: 20px;
-        padding-bottom: 0;
-      }
-      .beneficios {
-        flex-direction: column;
-      }
-    }
-  }
   // footer
   .infos {
     flex-direction: column;
@@ -147,13 +162,18 @@
     .infos-links {
       img {
         display: block;
+        margin-right: 10px;
       }
       &:hover {
+        img {
+          transition: ease-in-out 0.5s;
+          transform: rotate(180deg);
+        }
         ul {
           display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
         }
       }
       .button {
@@ -170,8 +190,20 @@
       }
     }
   }
+  .show-button {
+    display: block;
+  }
   .certificacoes-itens {
-    display: none;
+    a{
+      width: 100%;
+      display: none;
+    }
+    .seta-baixo:hover {
+      a {
+        display: flex; 
+        flex-wrap: wrap;
+      }
+    }
   }
   .politicas-container {
     flex-direction: column;
@@ -180,6 +212,9 @@
       padding-left: 0;
       gap: 20px;
     }
+  }
+  .contatos ul {
+    gap: 38px;
   }
   .whatsapp, .subir {
     display: none;
